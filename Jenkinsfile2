@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage('Hello'){
             steps{
-                echo $HELLO_WORLD_VAR
+                echo "$HELLO_WORLD_VAR"
             }
         }
     }
