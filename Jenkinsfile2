@@ -1,12 +1,14 @@
 pipeline{
     agent any
-    
+
     environment{
         HELLO_WORLD_VAR="Hello World!"
     }
     stages{
         stage('Hello'){
-            echo $HELLO_WORLD_VAR
+            steps{
+                echo $HELLO_WORLD_VAR
+            }
         }
     }
 }
